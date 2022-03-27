@@ -1,29 +1,44 @@
 var generateBtn = document.querySelector = ("#generate");
 
-function writePassword() {
+function writePassword(){
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  var passwordtext = document.querySelector("#password");
 
-  passwordText.value = password;
+  passwordtext.value = password;
+}
+//Event listener. I'm having issues with it in my code
 
-}
-//Generating our button
-generateBtn.addEventListener("clickbutton",writePassword);
-// Write password to the #password input
-/*Add a prompt for the user after activating the button*/
-var characters = prompt("Please insert a password with a minimum of 8 characters and a maximum of 128");
-/* Using if else statement will prompt the user to properly follow the guidelines for their password that we have stated above.*/
+generateBtn.addEventListerner("click",writePassword);
 
-if(characters<8){
-  alert("Please enter a password with a minimum of 8 characters");
-} 
-if (characters > 128){
-  alert("Please enter a passoword with a maximum of 128 characters");
+//variable declaration 
+
+var length;
+var special_character;
+var numeric_character;
+var uppercase;
+var lowercase;
+
+//Value
+var number = ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9");
+var special_character = ("~","!", "@", "#", "$","%","^","&","*","-","+");
+var lowercase = ("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","v","w","x","y","z");
+var uppercase = ("A", "B", "C", "D", "E", "F", "G","H","I","J","K","L","M","N","O","P","Q","R","S","T","V","W","X","Y","Z");
+//confirm password length
+
+var length = prompt("Please insert a password with a minimum of 8 characters and a maximum of 128");
+console.log(length)
+if(length > 8 || length <128){
+  alert('Your password contains ${length} amount of characters');
 }
-if(characters > 8){
-  console.log('I would like ${characters} in my final password');
+else if(length < 8 || length > 128){
+  alert('Your passowrd must be between 8-128 chacarter length!')
 }
-/* Now that our length constraints are set the user will have solidified their character*/
+// Simplified my if else statements by utilizing or
+
+//nested every other customization under this function
+function generatePassword(){
+
+  console.log("Lets make a password!");
 
 // Now to prompt the user for special characters
 var special_character =true;
@@ -35,7 +50,6 @@ if(promptTwo === special_character){
   console.log('I would not like to make my passoword more secure with special characters')
 }
 //The user may like to add variety to their password by adding upper and lower case characters into their combination
-var lowercase =true;
 var PromptThree= confirm();
 
 if(PromptThree === lowercase){
@@ -44,7 +58,6 @@ if(PromptThree === lowercase){
   console.log('I DO NOT want lowercase characters in my password');
 }
 
-var uppercase= true;
 var PromptFour=confirm();
 
 if(PromptFour === uppercase){
@@ -52,12 +65,7 @@ if(PromptFour === uppercase){
 } else{
   console.log('I DO NOT want uppercase characters in my password');
 }
-//Might need to add a four loop here
-
-
 //The user may or may not have wanted special characters but do they want numbers?
-
-var  numeric_character = true;
 var promptFive = prompt("Would you like to include numeric characters in your password to make it more secure? If so click the ok button");
 
 if(promptFive === numeric_character){
@@ -65,3 +73,15 @@ if(promptFive === numeric_character){
 } else{
   console.log('I would not like to make my password more secure with numeric characters');
 }
+
+// My tutor suggested I use Math.floor and Math.random
+for (var i=0;i < length; i++){
+
+// state variable selecteddecision, decision, decision.length, push
+  var selecteddecision= decision[Math.floor(Math.random() * decision.length)];
+  password.push(selecteddecision);
+}
+
+  return "You have genreated a password!"
+}
+//Might need to add a four loop here
