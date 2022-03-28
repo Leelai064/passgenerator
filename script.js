@@ -6,9 +6,8 @@ function writePassword(){
 
   passwordtext.value = password;
 }
-//Event listener. I'm having issues with it in my code
 
-generateBtn.addEventListerner("click",writePassword);
+generateBtn.addEventListener("click",writePassword);
 
 //variable declaration 
 
