@@ -19,8 +19,7 @@ https://github.com/Leelai064/passgenerator
 ```
 ## Website Usage
 ```
-Prompt example:
-
+<!-- ![Starting Page](./passgenerator/Assets/passwordgeneratorsite.png) -->
 Output Example:
 
 ```

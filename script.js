@@ -25,7 +25,9 @@ function generatePassword(){
     alert('Your password must be between 8-128 characters!');
     generatePassword();
   } //have a catch for when user doesn't pick between range
-
+  if(isNaN(length)){
+   return alert('You must insert a numbered length 8-128. Please click the Generate Password button and try again!');
+  }
    //  b. lowercase, uppercase, numbers, special characters
  var confirmnum = confirm("Would you like your password to contain numbers? If yes, click ok! If no, click cancel");
  var confirmspec= confirm("Would you like your password to contain special characters? If yes, click ok! If no, click cancel");
