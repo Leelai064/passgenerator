@@ -18,8 +18,24 @@ https://leelai064.github.io/passgenerator/
 https://github.com/Leelai064/passgenerator
 ```
 ## Website Usage
-```
-<!-- ![Starting Page](./passgenerator/Assets/passwordgeneratorsite.png) -->
-Output Example:
 
-```
+Starting Page
+![Starting Page](./assets/passwordgeneratorsite.png)
+
+Asking the user how long they want their password to be.
+![Initial User Prompt](./assets/lengthprompt.png)
+
+User inputs a number between 8-128 this prompt appears.
+![User Inputs Correct Number Length](./assets/lengthcorrect.png)
+
+Example of one of the constraints the user can choose to apply to their password.
+![Picking Number, Special Character, Upper and Lower Case Outputs](./assets/passwordconstraintprompt.png)
+
+Example of a succesful generated password.
+![Randomly Generated Password Successful](./assets/correctoutput.png)
+
+If the user inputs a length that is not between 8-128 then an error prompt is shown.
+![Incorrect Length User Input](./assets/lengthrequirement.png)
+
+If the user inputs anything other than a number an error message is sent out.
+![Incorrect input from user](./assets/errormustbenum.png)
