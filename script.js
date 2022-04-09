@@ -47,6 +47,12 @@ function generatePassword(){
    passchoice.push(...uppercase);
  }
 
+if (confirmnum == false &&
+    confirmspec == false &&
+    confirmlower == false &&
+    confirmupper == false){
+     return alert('Please select at least one constraint for your password');
+    }
 //4. Display password to the page. (our return is already complete)
   
 for(var i= 0; i<length; i++){
