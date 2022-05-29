@@ -20,7 +20,7 @@ https://github.com/Leelai064/passgenerator
 ## Website Usage
 
 Starting Page
-![Starting Page](./assets/passwordgeneratorsite.png)
+![Starting Page](./assets/resetbtn.png)
 
 Asking the user how long they want their password to be.
 ![Initial User Prompt](./assets/lengthprompt.png)
