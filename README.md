@@ -15,33 +15,33 @@ https://github.com/Leelai064/passgenerator
 ## Website Usage
 
 Starting Page
-![Starting Page](./assets/resetbtn.png)
+![Starting Page](./Assets/resetbtn.png)
 
 Asking the user how long they want their password to be.
-![Initial User Prompt](./assets/lengthprompt.png)
+![Initial User Prompt](./Assets/lengthprompt.png)
 
 User inputs a number between 8-128 this prompt appears.
 
-![User Inputs Correct Number Length](./assets/lengthcorrect.png)
+![User Inputs Correct Number Length](./Assets/lengthcorrect.png)
 
 Example of one of the constraints the user can choose to apply to their password.
 
-![Picking Number, Special Character, Upper and Lower Case Outputs](./assets/passwordconstraintprompt.png)
+![Picking Number, Special Character, Upper and Lower Case Outputs](./Assets/passwordconstraintprompt.png)
 
 Example of a successful generated password.
 
-![Randomly Generated Password Successful](./assets/correctoutput.png)
+![Randomly Generated Password Successful](./Assets/correctoutput.png)
 
 ## Website Errors
 
 If the user inputs a length that is not between 8-128 then an error prompt is shown.
 
-![Incorrect Length User Input](./assets/lengthrequirement.png)
+![Incorrect Length User Input](./Assets/lengthrequirement.png)
 
 If the user inputs anything other than a number an error message is sent out.
 
-![Incorrect input from user](./assets/errormustbenum.png)
+![Incorrect input from user](./Assets/errormustbenum.png)
 
 If the user decides to choose no for each password constraint
 
-![Constraints Needed](./assets/constraintsneeded.png)
+![Constraints Needed](./Assets/constraintsneeded.png)
