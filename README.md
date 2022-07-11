@@ -6,7 +6,7 @@ Many websites require the user to create a username and password for their profi
 
 ## Deployed Application
 
-https://leelai064.github.io/passgenerator/
+https://leelai064.github.io/passwordgenerator/
 
 ## passgenerator Github Repository
 
